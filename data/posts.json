@@ -1,0 +1,33 @@
+﻿[
+  {
+    "id": "post-synthetic-supply-chains",
+    "title": "Synthetic supply chains are the new policy battleground",
+    "author": "NowInTrends",
+    "summary": "Export controls meet cloud fabs as nations race to own the synthetic supply stack.",
+    "tags": ["Policy", "Semiconductors", "AI"],
+    "image": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1200&q=80",
+    "content": "## Why it matters\n\nGovernments are blending export controls with cloud fabrication requirements. The US and EU are drafting reciprocity rules that treat *training capacity* the same way they treated lithography tools in 2019. India meanwhile is offering tax credits for any sovereign that colocates AI fabs inside its new green grids.\n\n### First impact\n- Chip design platforms will need policy-grade audit logs.\n- Hyperscalers face a 12-month window to prove their AI workloads are traceable.\n\n[View the leaked policy memo](https://example.com/policy)",
+    "publishedAt": "2025-02-12T09:32:00.000Z"
+  },
+  {
+    "id": "post-cross-border-fintech-reset",
+    "title": "Cross-border fintech rails quietly reset",
+    "author": "NowInTrends",
+    "summary": "Basel-ready stablecoin rules are letting fintechs stitch together new liquidity paths overnight.",
+    "tags": ["Finance", "Regulation", "Stablecoins"],
+    "image": "https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=80",
+    "content": "Global payment licenses now come with programmable settlement clauses. Fintech majors in Singapore and São Paulo are syncing APIs through neutral compliance layers so that **stable-value tokens** can cross borders without tripping depository rules.\n\n> Expect treasury teams to re-price intraday liquidity once these pilots graduate from sandboxes.\n\n- MAS and FCA sandbox cohorts go live in Q1.\n- Watch for African neobanks to piggyback in Q2.",
+    "publishedAt": "2025-01-28T15:05:00.000Z"
+  },
+  {
+    "id": "post-culture-labs",
+    "title": "Culture labs inside product teams",
+    "author": "NowInTrends",
+    "summary": "Media orgs and consumer apps are embedding cultural intelligence pods to predict narrative blowback.",
+    "tags": ["Culture", "Product", "Media"],
+    "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+    "content": "Studios, streaming companies, and even fintech super-apps are spinning up micro teams of anthropologists, community researchers, and meme trackers. The brief: model which storylines will swing sentiment before features drop.\n\n#### Signals to watch\n1. **Pre-launch listening rooms** run inside Discord servers.\n2. Long-tail creators added to QA cycles as early cultural auditors.\n3. HR budgets carving out \"narrative resilience\" roles.\n\nAs media, policy, and product converge, cultural latency becomes a measurable KPI.",
+    "publishedAt": "2024-12-18T11:20:00.000Z"
+  }
+]
+

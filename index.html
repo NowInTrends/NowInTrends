@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NowInTrends surfaces consequential shifts across technology, policy, finance, and culture before they become yesterday's news." />
+    <title>NowInTrends | Signals Before They Settle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.1.5/dist/purify.min.js"></script>
+    <script defer src="scripts/posts.js"></script>
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="NowInTrends logo" />
+            <div>
+                <span class="logo-title">NowInTrends</span>
+                <span class="logo-tagline">Signals before they settle</span>
+            </div>
+        </div>
+        <nav>
+            <a href="#signals">Signals</a>
+            <a href="#subscribe">Subscribe</a>
+            <a href="#contact">Contact</a>
+            <a class="admin-link" href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="top">
+            <div class="hero-copy">
+                <p class="eyebrow">Radical clarity in volatile times</p>
+                <h1>The most consequential trends, distilled before they become consensus.</h1>
+                <p class="lead">
+                    We map the collision of technology, policy, finance, and culture so you can see around
+                    the curve—not in hindsight, but when it still matters.
+                </p>
+                <div class="hero-cta">
+                    <a class="button primary" href="#signals">Browse Signals</a>
+                    <a class="button secondary" href="admin.html">Publish a Briefing</a>
+                </div>
+                <p class="future-note">Newsletter + RSS arriving soon · stay tuned</p>
+            </div>
+            <div class="hero-panel">
+                <div class="stat">
+                    <span class="label">Coverage vectors</span>
+                    <span class="value">Tech · Policy · Finance · Culture</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Update cadence</span>
+                    <span class="value">Continuous intelligence drops</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Briefing depth</span>
+                    <span class="value">Markdown-native narratives</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="insights" aria-label="Focus areas">
+            <article>
+                <h3>Impact radar</h3>
+                <p>Rapidly see which macro shifts are gaining velocity, stalling, or colliding.</p>
+            </article>
+            <article>
+                <h3>Actionable context</h3>
+                <p>Each post breaks down why the moment matters and who will feel it first.</p>
+            </article>
+            <article>
+                <h3>Adaptive workflow</h3>
+                <p>Publish, edit, and organize via lightweight admin tools—no backend required.</p>
+            </article>
+        </section>
+
+        <section class="signals" id="signals">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Live intelligence feed</p>
+                    <h2>Latest signals</h2>
+                </div>
+                <div class="search-panel">
+                    <input type="search" id="searchInput" placeholder="Search by title, tag, author, or summary" aria-label="Search posts" />
+                    <div class="tag-filters" id="tagFilters" aria-label="Filter by tags"></div>
+                </div>
+            </div>
+            <div id="postsGrid" class="posts-grid" aria-live="polite"></div>
+            <div id="emptyState" class="empty-state" hidden>
+                <h3>No signals match that query.</h3>
+                <p>Try a different keyword, or clear any active tag filters.</p>
+                <button class="button ghost" id="clearFilters">Reset filters</button>
+            </div>
+        </section>
+
+        <section class="newsletter" id="subscribe">
+            <div>
+                <p class="eyebrow">Future drop</p>
+                <h2>Intelligence that meets you where you are.</h2>
+                <p>
+                    Email briefings, RSS, and custom alerts are on the roadmap. Enter your email to be first in
+                    line—we'll only reach out when the subscription tier launches.
+                </p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <label for="subscribeEmail" class="sr-only">Email address</label>
+                <input type="email" id="subscribeEmail" name="email" placeholder="you@forwardlooking.com" required />
+                <button type="submit" class="button primary" disabled>Coming Soon</button>
+                <small>Subscriptions are not live yet. We'll notify you once automation is ready.</small>
+            </form>
+        </section>
+
+        <section class="contact" id="contact">
+            <div>
+                <p class="eyebrow">Direct line</p>
+                <h2>Brief us on what you're tracking.</h2>
+                <p>Use the form and we'll route it straight to <a href="mailto:nowintrends.today@gmail.com">nowintrends.today@gmail.com</a>.</p>
+            </div>
+            <form id="contactForm">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="name" placeholder="Alex Analyst" required />
+
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="email" placeholder="alex@firm.com" required />
+
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="What should be on our radar?" required></textarea>
+
+                <button type="submit" class="button primary">Send</button>
+                <p class="contact-feedback" id="contactFeedback" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>NowInTrends</strong>
+            <p>Designed for GitHub Pages at <a href="https://nowintrends.github.io/NowInTrends/">nowintrends.github.io/NowInTrends</a>.</p>
+        </div>
+        <div>
+            <p>Admin console uses local storage today and is ready for API integration tomorrow.</p>
+            <p class="tiny-note">© <span id="currentYear"></span> NowInTrends. All signals subject to rapid change.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
